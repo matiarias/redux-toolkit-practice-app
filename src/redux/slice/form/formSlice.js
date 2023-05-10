@@ -10,7 +10,7 @@ export const formSlice = createSlice({
   reducers: {
     getFormData: (state, action) => {
       //   const { name, lastname, email } = action.payload;
-      state.data = action.payload;
+      state.data = [...state.data, action.payload];
 
       //   state.name = name;
       //   state.lastname = lastname;
