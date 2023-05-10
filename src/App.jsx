@@ -17,7 +17,7 @@ const App = () => {
     const response = await axios(
       "https://api.thecatapi.com/v1/images/search?api_key=live_qOo9CkEgXae2sQSBaJw3ZS2odY3t58Hr3j0QKrCk8Ziw3j4KYaUom6hBQH6WH9bl"
     );
-    console.log(response.data);
+    // console.log(response.data);
     dispatch(fetchCats(response.data));
   };
 

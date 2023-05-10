@@ -14,7 +14,7 @@ const NavBar = () => {
 
           <Link to={"/about"}>
             <span className="text-gray-100 text-lg sm:text-xl lg:text-2xl 2xl:text-3xl font-bold hover:text-amber-800">
-              Sobre mi
+              Sobre Nosotros
             </span>
           </Link>
 

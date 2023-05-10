@@ -23,10 +23,10 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="h-100 max-w-screen-md mx-auto flex flex-col justify-center items-center gap-8"
+      className="h-100 max-w-screen-sm mx-auto flex flex-col justify-center items-center gap-8"
     >
       <input
-        className="w-full py-3 px-3 bg-green-800/10 text-lg lg:text-xl rounded-lg border-2 border-green-800 focus:outline-none placeholder:text-gray-800"
+        className="w-full py-1 lg:py-2 px-3 bg-green-800/10 text-lg lg:text-xl rounded-lg border-2 border-green-800 focus:outline-none placeholder:text-gray-800"
         type="text"
         id="name"
         value={inputName}
@@ -38,7 +38,7 @@ const Form = () => {
       />
 
       <input
-        className="w-full py-3 px-3 bg-green-800/10 text-lg lg:text-xl rounded-lg border-2 border-green-800 focus:outline-none placeholder:text-gray-800"
+        className="w-full py-1 lg:py-2 px-3 bg-green-800/10 text-lg lg:text-xl rounded-lg border-2 border-green-800 focus:outline-none placeholder:text-gray-800"
         type="text"
         id="lastname"
         value={inputLastName}
@@ -50,7 +50,7 @@ const Form = () => {
       />
 
       <input
-        className="w-full py-3 px-3 bg-green-800/10 text-lg lg:text-xl rounded-lg border-2 border-green-800 focus:outline-none placeholder:text-gray-800"
+        className="w-full py-1 lg:py-2 px-3 bg-green-800/10 text-lg lg:text-xl rounded-lg border-2 border-green-800 focus:outline-none placeholder:text-gray-800"
         type="email"
         id="email"
         value={inputEmail}
@@ -63,7 +63,7 @@ const Form = () => {
 
       <button
         type="submit"
-        className="py-3 w-full bg-gradient-to-b from-amber-900 to-amber-600 text-gray-100 text-lg lg:text-xl font-bold rounded-lg shadow-md shadow-gray-500"
+        className="py-1 lg:py-2 w-full bg-gradient-to-b from-amber-900 to-amber-600 text-gray-100 text-lg lg:text-xl font-bold rounded-lg shadow-md shadow-gray-500"
       >
         Enviar
       </button>

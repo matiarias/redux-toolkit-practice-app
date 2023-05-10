@@ -8,8 +8,8 @@ const Home = ({ handleClick }) => {
 
   return (
     <div className="min-h-screen w-full">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black text-center my-12">
-        Disfruta de gatitos randoms para tu día
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black text-center underline underline-offset-2 decoration-4 decoration-emerald-800 my-12">
+        Disfruta de gatitos randoms para tu día!
       </h1>
 
       {loading ? (
