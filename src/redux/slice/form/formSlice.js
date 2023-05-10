@@ -9,7 +9,6 @@ export const formSlice = createSlice({
   initialState,
   reducers: {
     getFormData: (state, action) => {
-      //   const { name, lastname, email } = action.payload;
       state.data = [...state.data, action.payload];
 
       //   state.name = name;
@@ -19,6 +18,6 @@ export const formSlice = createSlice({
   },
 });
 
-export const { getFormData } = formSlice.actions;
+export const { getFormData, resetForm } = formSlice.actions;
 
 export default formSlice.reducer;

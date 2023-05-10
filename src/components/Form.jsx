@@ -18,6 +18,10 @@ const Form = () => {
         email: inputEmail,
       })
     );
+
+    setInputName("");
+    setInputLastName("");
+    setInputEmail("");
   };
 
   return (
