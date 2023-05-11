@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   loading: true,
   data: [],
+  title: "Disfruta de gatitos hermosos randoms para tu día!",
 };
 
 export const catsSlice = createSlice({

@@ -6,10 +6,12 @@ const Home = ({ handleClick }) => {
 
   const loading = useSelector((state) => state.catsApi.loading);
 
+  const title = useSelector((state) => state.catsApi.title);
+
   return (
     <div className="min-h-screen w-full">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black text-center underline underline-offset-2 decoration-4 decoration-emerald-800 my-12">
-        Disfruta de gatitos randoms para tu día!
+        {title}
       </h1>
 
       {loading ? (
