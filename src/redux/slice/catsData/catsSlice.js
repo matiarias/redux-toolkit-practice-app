@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  loading: true,
+  loading: false,
   data: [],
   title: "Disfruta de gatitos hermosos randoms para tu día!",
 };
@@ -14,9 +14,13 @@ export const catsSlice = createSlice({
       state.data = action.payload;
       state.loading = false;
     },
+
+    setLoading: (state, action) => {
+      state.loading = action.payload;
+    },
   },
 });
 
-export const { fetchCats } = catsSlice.actions;
+export const { fetchCats, setLoading } = catsSlice.actions;
 
 export default catsSlice.reducer;

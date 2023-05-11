@@ -1,3 +1,5 @@
+// -------------------- función suma ----------------------
+
 export const suma = (num1, num2) => {
   if (typeof (num1 + num2) === "string") {
     return "datos no validos";
@@ -6,9 +8,9 @@ export const suma = (num1, num2) => {
   return num1 + num2;
 };
 
-// ---------------------------------------------
+// ------------------------- función filtrar numero mas alto ------------------
 
-export const filtrarNumero = (arrayNumeros) => {
+export const filtrarNumeroMasAlto = (arrayNumeros) => {
   return Math.max(...arrayNumeros);
 };
 
@@ -16,7 +18,7 @@ export const arrayConSoloNumeros = (array) => {
   return array.every((element) => typeof element === "number");
 };
 
-// -----------------------------------------------
+// ------------------ función primer letra mayuscula ------------------
 
 export const primerLetraMayuscula = (string) => {
   if (typeof string !== "string") {
@@ -33,7 +35,7 @@ export const primerLetraMayuscula = (string) => {
   return newArr.join(" ");
 };
 
-// --------------------------------------------
+// ----------------- función cual es el numero mas alto -------------
 
 export const cualEsMayor = (numero1, numero2) => {
   if (typeof numero1 !== "number" && typeof numero2 !== "number") {

@@ -1,10 +1,14 @@
+// import storeConfigure from "redux-mock-store";
+// import { render, screen } from "@testing-library/react";
+// import { Provider } from "react-redux";
+
 import {
   arrayConSoloNumeros,
   cualEsMayor,
-  filtrarNumero,
+  filtrarNumeroMasAlto,
   primerLetraMayuscula,
   suma,
-} from "../utils/testFunctions";
+} from "../utils/helpers";
 
 describe("tests de practica", () => {
   // ----------------- tests para la función suma ---------------------
@@ -26,7 +30,7 @@ describe("tests de practica", () => {
   // ----------------- tests para la función filtrar número mas alto ---------------------
 
   test("devuelve el número mas alto del array que tiene como parametro la función filtarNumero", () => {
-    let response = filtrarNumero([2, 4, 8, 24]);
+    let response = filtrarNumeroMasAlto([2, 4, 8, 24]);
 
     expect(response).toBe(24);
   });
