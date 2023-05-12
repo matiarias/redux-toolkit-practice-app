@@ -8,7 +8,7 @@ const Home = ({ fetchData }) => {
 
   return (
     <>
-      <div className="h-screen w-full px-8">
+      <div className="min-h-screen w-full px-8">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black text-center underline underline-offset-2 decoration-4 decoration-emerald-800 my-12">
           {title}
         </h1>
