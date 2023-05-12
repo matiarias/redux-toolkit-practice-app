@@ -27,7 +27,7 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="h-100 max-w-screen-sm mx-auto flex flex-col justify-center items-center gap-8"
+      className="h-auto max-w-screen-sm mx-auto flex flex-col items-center gap-8 bg-amber-700/20 border-4 border-emerald-900/50 rounded-lg p-8"
     >
       <input
         className="w-full py-1 lg:py-2 px-3 bg-green-800/10 text-lg lg:text-xl rounded-lg border-2 border-green-800 focus:outline-none placeholder:text-gray-800"
