@@ -1,7 +1,7 @@
 import {
+  suma,
   filtrarNumeroMasAlto,
   primerLetraMayuscula,
-  suma,
   cualEsMayor,
 } from "../utils/helpers";
 
@@ -75,11 +75,13 @@ describe("tests para la función convertirVerificarMayusculas", () => {
 
 describe("tests para la función sumarleAlNumeroMasAlto", () => {
   test("test que devuelve la suma del mayor de los dos primeros números + el tercer número", () => {
-    cualEsMayor.mockReturnValueOnce(10);
+    cualEsMayor.mockReturnValueOnce(4);
 
-    let response = sumarleAlNumeroMasAlto(5, 10, 14);
+    suma.mockReturnValueOnce(14);
 
-    expect(response).toBe(24);
+    let response = sumarleAlNumeroMasAlto(2, 4, 10);
+
+    expect(response).toBe(14);
   });
 
   test("todos los parametros deben ser de tipo number, si no devuelve un mensaje de error", () => {

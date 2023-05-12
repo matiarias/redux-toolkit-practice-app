@@ -45,7 +45,9 @@ export const sumarleAlNumeroMasAlto = (num1, num2, num3) => {
   ) {
     const maxValue = cualEsMayor(num1, num2);
 
-    return maxValue + num3;
+    const result = suma(maxValue, num3);
+
+    return result;
   }
 
   return "error, los parametros deben ser de tipo number";

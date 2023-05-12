@@ -1,7 +1,7 @@
 // -------------------- función suma ----------------------
 
 export const suma = (num1, num2) => {
-  if (typeof (num1 + num2) === "string") {
+  if (typeof (num1 + num2) !== "number") {
     return "datos no validos";
   }
 
