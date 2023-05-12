@@ -11,11 +11,11 @@ export const suma = (num1, num2) => {
 // ------------------------- función filtrar numero mas alto ------------------
 
 export const filtrarNumeroMasAlto = (arrayNumeros) => {
-  return Math.max(...arrayNumeros);
-};
+  if (arrayNumeros.every((element) => typeof element === "number")) {
+    return Math.max(...arrayNumeros);
+  }
 
-export const arrayConSoloNumeros = (array) => {
-  return array.every((element) => typeof element === "number");
+  return "error, el parametro no es un arreglo de números";
 };
 
 // ------------------ función primer letra mayuscula ------------------

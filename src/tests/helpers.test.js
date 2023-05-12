@@ -3,7 +3,6 @@
 // import { Provider } from "react-redux";
 
 import {
-  arrayConSoloNumeros,
   cualEsMayor,
   filtrarNumeroMasAlto,
   primerLetraMayuscula,
@@ -29,7 +28,7 @@ describe("tests de practica", () => {
 
   // ----------------- tests para la función filtrar número mas alto ---------------------
 
-  test("devuelve el número mas alto del array que tiene como parametro la función filtarNumero", () => {
+  test("devuelve el número mas alto del array que tiene como parametro la función filtarNumeroMasAlto", () => {
     let response = filtrarNumeroMasAlto([2, 4, 8, 24]);
 
     expect(response).toBe(24);
@@ -37,10 +36,10 @@ describe("tests de practica", () => {
 
   //   ----- tests para chequear que el array como parametro solo tenga números -----
 
-  test("checkear si el array que viene como parametro en la función arrayConSoloNumeros solo tiene números", () => {
-    let response = arrayConSoloNumeros([24, 27, 23]);
+  test("debe devolver un mensaje de error si el array que viene como parametro en la función filtrarNumeroMasAlto", () => {
+    let response = filtrarNumeroMasAlto(["cine", "pizza", 24, 27]);
 
-    expect(response).toBe(true);
+    expect(response).toBe("error, el parametro no es un arreglo de números");
   });
 
   //   ------------ tests para la función primerLetraMayuscula -----------
@@ -77,9 +76,9 @@ describe("tests de practica", () => {
     expect(response).toBe("datos no validos");
   });
 
-  test("checkear que la funcion devuelva el número mas alto entre 1 y 2", () => {
-    let response = cualEsMayor(1, 2);
+  test("checkear que la funcion devuelva el número mas alto entre los parametros numero1 y numero2", () => {
+    let response = cualEsMayor(10, 24);
 
-    expect(response).toBe(2);
+    expect(response).toBe(24);
   });
 });
